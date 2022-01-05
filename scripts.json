@@ -1,0 +1,20 @@
+{
+    "$schema": "https://deno.land/x/denon@2.4.9/schema.json",
+    "env": {
+      "TOKEN": "abc"
+    },
+    "scripts": {
+      "start": {
+        "cmd": "deno run --unstable server.ts",
+        "allow": [
+          "env",
+          "net",
+          "read",
+          "write"
+        ],
+        "env": {
+          "PORT": "3000"
+        }
+      }
+    }
+  }
